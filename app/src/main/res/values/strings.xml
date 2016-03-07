@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tiket</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--         BUTTON TEXT           -->
+    <string name="pesquisar">Pesquisar</string>
+    <string name="anunciar">Anunciar</string>
+    <string name="inicio">Inicio</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="perfil">Perfil</string>
+
+</resources>
