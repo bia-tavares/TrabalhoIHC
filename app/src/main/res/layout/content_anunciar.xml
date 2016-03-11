@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.uff.ihc.trabalhoihc.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esporte"
+                android:id="@+id/textViewEsporteAnunciar"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerEsporteAnunciar"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modalidade"
+                android:id="@+id/textViewModalidadeAnunciar"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutRadioModalidadeAnunciar"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:id="@+id/radioMasculinoAnunciar"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino"
+                    android:id="@+id/radioFemininoAnunciar"
+                    android:checked="false"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço"
+                android:id="@+id/textViewPrecoAnunciar"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextValorAnunciar"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foto"
+                android:id="@+id/textViewFotoAnunciar"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageButtonFoto"
+                android:src="@mipmap/ic_add_a_photo_black_24dp"
+                android:background="transparent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"
+                android:id="@+id/buttonCadastrar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

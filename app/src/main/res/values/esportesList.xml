@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="esportes_array">
+        <item>Atletismo</item>
+        <item>Badminton</item>
+        <item>Basquete</item>
+        <item>Boxe</item>
+        <item>Canoagem Slalom</item>
+        <item>Canoagem Velocidade</item>
+        <item>Ciclismo BMX</item>
+        <item>Ciclismo Estrada</item>
+        <item>Ciclismo de Pista</item>
+        <item>Ciclismo Mountain Bike</item>
+        <item>Esgrima</item>
+        <item>Futebol</item>
+        <item>Ginástica Artística</item>
+        <item>Ginástica de Trampolim</item>
+        <item>Ginástica Rítmica</item>
+        <item>Golf</item>
+        <item>Handebol</item>
+        <item>Hipismo Adestramento</item>
+        <item>Hipismo CCE</item>
+        <item>Hipismo Saltos</item>
+        <item>Hóquei Sobre Grama</item>
+        <item>Judô</item>
+        <item>Levantamento de Peso</item>
+        <item>Luta Estilo Livre</item>
+        <item>Luta Greco-Romana</item>
+        <item>Maratonas Aquáticas</item>
+        <item>Nado Sincronizado</item>
+        <item>Natação</item>
+        <item>Pentatlo Moderno</item>
+        <item>Polo Aquático</item>
+        <item>Remo</item>
+        <item>Rugby</item>
+        <item>Saltos Ornamentais</item>
+        <item>Taekwondô</item>
+        <item>Tênis de Mesa</item>
+        <item>Tênis</item>
+        <item>Tiro Com Arco</item>
+        <item>Tiro Esportivo</item>
+        <item>Triatlo</item>
+        <item>Vela</item>
+        <item>Voleibol</item>
+        <item>Vôlei de Praia</item>
+    </string-array>
+</resources>

@@ -2,8 +2,8 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:fitsSystemWindows="true"
     tools:context="br.uff.ihc.trabalhoihc.HomeActivity">
 
@@ -23,20 +23,60 @@
     </android.support.design.widget.AppBarLayout>
 -->
 
-        <include layout="@layout/content_home" />
+<!--
+        <include
+            android:id="@+id/includeHome"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_home" />
+
+        <include
+            android:id="@+id/includePesquisar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_pesquisar" />
+
+
+        <include android:id="@+id/includeResutPesquisar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_resultpesquisar"/>
+
+
+        <include android:id="@+id/includeAnunciar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_anunciar"/>
+
+        <include android:id="@+id/includeFavoritos"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_favoritos"/>
+
+
+        <include android:id="@+id/includePerfil"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_perfil"/>
+-->
+
+        <include android:id="@+id/includeIngresso"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_ingresso"/>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:gravity="end"
-            android:id="@+id/menuButtons">
+            android:layout_gravity="bottom"
+            android:id="@+id/menuButtons"
+            android:gravity="center_horizontal">
 
             <android.support.design.widget.FloatingActionButton
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
                 android:src="@mipmap/ic_search_white_24dp"
                 android:layout_margin="10dp"
                 android:elevation="8dp"
@@ -46,7 +86,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
                 android:src="@mipmap/megaphone_24"
                 android:layout_margin="10dp"
                 android:elevation="8dp"
@@ -56,17 +95,15 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
                 android:src="@mipmap/ic_home_white_24dp"
                 android:layout_margin="10dp"
                 android:elevation="8dp"
-                android:id="@+id/inicial" />
+                android:id="@+id/inicio" />
 
             <android.support.design.widget.FloatingActionButton
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
                 android:src="@mipmap/ic_grade_white_24dp"
                 android:layout_margin="10dp"
                 android:elevation="8dp"
@@ -76,7 +113,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
                 android:src="@mipmap/ic_account_circle_white_24dp"
                 android:layout_margin="10dp"
                 android:elevation="8dp"

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.uff.ihc.trabalhoihc.HomeActivity"
+    tools:showIn="@layout/activity_home"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imageViewIngresso"
+                android:src="@android:drawable/sym_def_app_icon"
+                android:layout_gravity="center_horizontal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esporte"
+                android:id="@+id/textViewEsporteIngresso"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modalidade"
+                android:id="@+id/textViewModalidadeIngresso"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço"
+                android:id="@+id/textViewPrecoIngresso"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imageButton"
+                    android:src="@mipmap/faceicon"
+                    android:layout_marginLeft="30dp"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Perfil"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/buttonPerfilIngresso"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

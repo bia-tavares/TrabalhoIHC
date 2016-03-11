@@ -14,7 +14,7 @@ import android.widget.Button;
 public class LoginActivity extends AppCompatActivity {
 
 
-    private Button logar;
+    private Button logar, face, criar;
 
 
     @Override
@@ -33,40 +33,36 @@ public class LoginActivity extends AppCompatActivity {
             }
         });*/
 
+        face = (Button) findViewById(R.id.faceButton);
         logar = (Button) findViewById(R.id.logar);
+        criar = (Button) findViewById(R.id.criarConta);
 
         setuplogin();
     }
 
     public void setuplogin(){
+
+        face.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Fazer alguma coisa
+            }
+        });
+
+
         logar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent home = new Intent(LoginActivity.this, HomeActivity.class);
-                LoginActivity.this.startActivity(home);
+                //Fazer alguma coisa
+            }
+        });
+
+        criar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Fazer alguma coisa
             }
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

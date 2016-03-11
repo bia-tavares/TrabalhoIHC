@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ordenar_array">
+        <item>Menor valor</item>
+        <item>Maior Valor</item>
+        <item>Data de inclusão</item>
+    </string-array>
+</resources>
