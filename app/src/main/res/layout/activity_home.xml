@@ -23,13 +23,14 @@
     </android.support.design.widget.AppBarLayout>
 -->
 
-<!--
+
         <include
             android:id="@+id/includeHome"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             layout="@layout/content_home" />
 
+    <!--
         <include
             android:id="@+id/includePesquisar"
             android:layout_width="fill_parent"
@@ -58,12 +59,13 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             layout="@layout/content_perfil"/>
--->
 
         <include android:id="@+id/includeIngresso"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             layout="@layout/content_ingresso"/>
+
+            -->
 
         <LinearLayout
             android:orientation="horizontal"

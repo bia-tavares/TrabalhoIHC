@@ -47,6 +47,7 @@
         android:layout_alignParentStart="true"
         android:id="@+id/linearLayout">
 
+        <!--
         <Button
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -55,6 +56,15 @@
             android:layout_above="@+id/linearLayout"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+        -->
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
 
         <Button
             android:layout_width="150dp"

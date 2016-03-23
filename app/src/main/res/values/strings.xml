@@ -1,4 +1,7 @@
 <resources>
+
+    <string name="facebook_app_id">1578544679129193</string>
+
     <string name="app_name">Tiket</string>
     <string name="action_settings">Configurações</string>
     <string name="title_activity_home">HomeActivity</string>
