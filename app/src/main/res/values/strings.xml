@@ -6,11 +6,21 @@
     <string name="action_settings">Configurações</string>
     <string name="title_activity_home">HomeActivity</string>
 
-    <!--         BUTTON TEXT           -->
+    <!--        BUTTON TEXT        -->
     <string name="pesquisar">Pesquisar</string>
     <string name="anunciar">Anunciar</string>
     <string name="inicio">Inicio</string>
     <string name="favoritos">Favoritos</string>
     <string name="perfil">Perfil</string>
+    <string name="logar">Logar</string>
+    <string name="criarConta">Criar Conta</string>
+    <string name="cadastrar">Cadastrar</string>
+
+    <!--        LOGIN TEXTS        -->
+    <string name="login">Login</string>
+    <string name="novaSenha">Nova Senha</string>
+    <string name="repeteSenha">Repita a Senha</string>
+    <string name="termos">Termos e condições</string>
+    <string name="nome">Nome</string>
 
 </resources>

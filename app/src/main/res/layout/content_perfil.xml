@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="br.uff.ihc.trabalhoihc.HomeActivity"
+    tools:context=".Control.HomeActivity"
     tools:showIn="@layout/activity_home"
     android:orientation="vertical">
 
