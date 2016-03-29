@@ -47,6 +47,8 @@ public class OpenHelper extends SQLiteOpenHelper {
                 "        ON DELETE CASCADE" +
                 "        ON UPDATE CASCADE);");
 
+
+
     }
 
     public void deleteDB(SQLiteDatabase db) {

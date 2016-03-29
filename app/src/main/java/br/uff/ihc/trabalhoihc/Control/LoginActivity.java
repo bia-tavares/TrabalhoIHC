@@ -111,8 +111,6 @@ public class LoginActivity extends FragmentActivity {
                     if (id != -1) {
 
                         SingletonUsuarioCtrl.setIdUsuario(id);
-                        SingletonUsuarioCtrl.setLogin(usuarioLogin.getText().toString());
-                        SingletonUsuarioCtrl.setSenha(senhaLogin.getText().toString());
 
                         Intent it = new Intent(LoginActivity.this, HomeActivity.class);
                         LoginActivity.this.startActivity(it);
@@ -144,8 +142,6 @@ public class LoginActivity extends FragmentActivity {
                                 if (idUsuario != -1) {
 
                                     SingletonUsuarioCtrl.setIdUsuario(idUsuario);
-                                    SingletonUsuarioCtrl.setLogin(login.getText().toString());
-                                    SingletonUsuarioCtrl.setSenha(novaSenha.getText().toString());
 
                                     Intent it = new Intent(LoginActivity.this, HomeActivity.class);
                                     LoginActivity.this.startActivity(it);

@@ -39,13 +39,49 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Localização"
+                android:id="@+id/textViewLocal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="100"
+                android:id="@+id/editTextLocal"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Código do Ingresso"
+                android:id="@+id/textViewCodigo"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="100"
+                android:id="@+id/editTextCodigo"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Modalidade"
                 android:id="@+id/textViewModalidadeAnunciar"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <RadioGroup
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,12 +106,13 @@
                     android:id="@+id/radioFemininoAnunciar"
                     android:checked="false"
                     android:layout_marginLeft="30dp" />
-            </LinearLayout>
+
+            </RadioGroup>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Preço"
+                android:text="Preço (R$)"
                 android:id="@+id/textViewPrecoAnunciar"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
@@ -100,10 +137,12 @@
                 android:textStyle="bold" />
 
             <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/imageButtonFoto"
-                android:src="@mipmap/ic_add_a_photo_black_24dp" />
+                android:src="@mipmap/ic_add_a_photo_black_24dp"
+                android:background="#FFFFFF"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -111,7 +150,9 @@
                 android:text="Cadastrar"
                 android:id="@+id/buttonCadastrar"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp" />
+                android:layout_marginTop="30dp"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorAccent"/>
 
         </LinearLayout>
     </ScrollView>

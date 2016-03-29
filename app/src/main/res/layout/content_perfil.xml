@@ -27,16 +27,26 @@
                 android:layout_marginLeft="10dp"
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/colorAccent"/>
 
             <ImageView
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/imageViewPerfil"
                 android:src="@android:drawable/sym_def_app_icon"
                 android:layout_gravity="center_horizontal" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageButtonFotoPerfil"
+                android:src="@mipmap/ic_add_a_photo_black_24dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="end"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -45,15 +55,7 @@
                 android:layout_marginTop="60dp"
                 android:layout_marginLeft="30dp"
                 android:id="@+id/buttonConfig"
-                android:background="@android:color/transparent"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Perguntas"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="30dp"
-                android:id="@+id/buttonPerguntas"
+                android:textColor="@color/colorPrimaryDark"
                 android:background="@android:color/transparent"/>
 
             <Button
@@ -63,6 +65,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
                 android:id="@+id/buttonConvidar"
+                android:textColor="@color/colorPrimaryDark"
                 android:background="@android:color/transparent"/>
 
             <Button
@@ -72,6 +75,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
                 android:id="@+id/buttonMeusIngressos"
+                android:textColor="@color/colorPrimaryDark"
                 android:background="@android:color/transparent" />
 
         </LinearLayout>

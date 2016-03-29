@@ -1,68 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/til1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
 
-        <EditText
-            android:id="@+id/usuarioLogin"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="45"
-            android:gravity="center"
-            android:hint="Login"
-            android:textColorHint="#000000"
-            android:inputType="text">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
-        </EditText>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/usuarioLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="45"
+                    android:gravity="center"
+                    android:hint="Login"
+                    android:textColorHint="#FA6900"
+                    android:inputType="text">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/til2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                </EditText>
 
-        <EditText
-            android:id="@+id/senhaLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="45"
-            android:gravity="center"
-            android:hint="Senha"
-            android:textColorHint="#000000"
-            android:inputType="textPassword">
+            </android.support.design.widget.TextInputLayout>
 
-        </EditText>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/senhaLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="45"
+                    android:gravity="center"
+                    android:hint="Senha"
+                    android:textColorHint="#FA6900"
+                    android:inputType="textPassword">
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/login"
-        android:id="@+id/iniciarLogin"
-        android:shadowColor="#8b8989"
-        android:elevation="8dp"
-        android:translationX="-15dp"
-        android:translationY="15dp"
-        android:background="#FFFFFF"
-        android:layout_gravity="center_horizontal"/>
+                </EditText>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text=""
-        android:layout_marginTop="20dp"
-        android:id="@+id/errorTextLogin"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/login"
+                android:id="@+id/iniciarLogin"
+                android:elevation="20dp"
+                android:background="#FA6900"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:id="@+id/errorTextLogin"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>

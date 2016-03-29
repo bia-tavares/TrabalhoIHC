@@ -1,74 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".Control.HomeActivity">
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@mipmap/app2"
+        />
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbarAlwaysDrawVerticalTrack="true">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vfHome"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center">
 
-            <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/vfHome"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="60dp">
-
-                <include
-                    android:id="@+id/includeHome"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    layout="@layout/content_home" />
+        <include
+            android:id="@+id/includeHome"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_home" />
 
 
-                <include
-                    android:id="@+id/includePesquisar"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    layout="@layout/content_pesquisar" />
+        <include
+            android:id="@+id/includePesquisar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_pesquisar" />
 
 
-                <include android:id="@+id/includeResutPesquisar"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    layout="@layout/content_resultpesquisar"/>
+        <include android:id="@+id/includeResutPesquisar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_resultpesquisar"/>
 
 
-                <include android:id="@+id/includeAnunciar"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    layout="@layout/content_anunciar"/>
+        <include android:id="@+id/includeAnunciar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_anunciar"/>
 
-                <include android:id="@+id/includeFavoritos"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    layout="@layout/content_favoritos"/>
+        <include android:id="@+id/includeFavoritos"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_favoritos"/>
 
 
-                <include android:id="@+id/includePerfil"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    layout="@layout/content_perfil"/>
+        <include android:id="@+id/includePerfil"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_perfil"/>
 
-                <include android:id="@+id/includeIngresso"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    layout="@layout/content_ingresso"/>
+        <include android:id="@+id/includeIngresso"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/content_ingresso"/>
 
-            </ViewFlipper>
-        </LinearLayout>
-    </ScrollView>
+    </ViewFlipper>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -125,4 +121,4 @@
 
     </LinearLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+</GridLayout>

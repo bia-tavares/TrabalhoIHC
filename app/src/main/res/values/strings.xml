@@ -22,5 +22,7 @@
     <string name="repeteSenha">Repita a Senha</string>
     <string name="termos">Termos e condições</string>
     <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="email">Email</string>
 
 </resources>

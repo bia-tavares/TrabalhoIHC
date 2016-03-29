@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/spinnerEsporte"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
                 android:layout_marginLeft="10dp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <RadioGroup
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                     android:id="@+id/radioFeminino"
                     android:checked="false"
                     android:layout_marginLeft="30dp" />
-            </LinearLayout>
+            </RadioGroup>
 
             <TextView
                 android:layout_width="wrap_content"

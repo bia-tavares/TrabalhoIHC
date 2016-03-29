@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
 
         <com.facebook.login.widget.LoginButton
             android:id="@+id/login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal" />
+            android:elevation="10dp" />
 
         <Button
             android:layout_width="150dp"
@@ -18,12 +18,10 @@
             android:layout_marginTop="20dp"
             android:text="@string/logar"
             android:id="@+id/logar"
-            android:shadowColor="#8b8989"
-            android:elevation="8dp"
-            android:translationX="-15dp"
-            android:translationY="15dp"
-            android:background="#FFFFFF"
-            android:layout_gravity="center_horizontal"/>
+            android:elevation="20dp"
+            android:background="#FA6900"
+            android:textColor="#ffffff"
+            />
 
         <Button
             android:layout_width="150dp"
@@ -31,12 +29,10 @@
             android:layout_marginTop="20dp"
             android:text="@string/criarConta"
             android:id="@+id/criarConta"
-            android:shadowColor="#8b8989"
-            android:elevation="8dp"
-            android:translationX="-15dp"
-            android:translationY="15dp"
-            android:background="#FFFFFF"
-            android:layout_gravity="center_horizontal"/>
+            android:elevation="20dp"
+            android:textColor="#ffffff"
+            android:background="#FA6900"
+            />
 
 
 </LinearLayout>

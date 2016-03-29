@@ -1,107 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/til4"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
 
-        <EditText
-            android:id="@+id/nome"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="100"
-            android:gravity="center"
-            android:hint="@string/nome"
-            android:textColorHint="#000000"
-            android:inputType="text">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
-        </EditText>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="100"
+                    android:gravity="center"
+                    android:hint="@string/nome"
+                    android:textColorHint="#FA6900"
+                    android:inputType="text">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/til1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                </EditText>
 
-        <EditText
-            android:id="@+id/login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="45"
-            android:gravity="center"
-            android:hint="@string/login"
-            android:textColorHint="#000000"
-            android:inputType="text">
+            </android.support.design.widget.TextInputLayout>
 
-        </EditText>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="100"
+                    android:gravity="center"
+                    android:hint="@string/email"
+                    android:textColorHint="#FA6900"
+                    android:inputType="text">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/til2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                </EditText>
 
-        <EditText
-            android:id="@+id/novaSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="45"
-            android:gravity="center"
-            android:hint="@string/novaSenha"
-            android:textColorHint="#000000"
-            android:inputType="textPassword">
+            </android.support.design.widget.TextInputLayout>
 
-        </EditText>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="100"
+                    android:gravity="center"
+                    android:hint="@string/telefone"
+                    android:textColorHint="#FA6900"
+                    android:inputType="text">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/til3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                </EditText>
 
-        <EditText
-            android:id="@+id/repeteSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="45"
-            android:gravity="center"
-            android:hint="@string/repeteSenha"
-            android:textColorHint="#000000"
-            android:inputType="textPassword">
+            </android.support.design.widget.TextInputLayout>
 
-        </EditText>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="45"
+                    android:gravity="center"
+                    android:hint="@string/login"
+                    android:textColorHint="#FA6900"
+                    android:inputType="text">
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/cadastrar"
-        android:id="@+id/cadastrar"
-        android:shadowColor="#8b8989"
-        android:elevation="8dp"
-        android:translationX="-15dp"
-        android:translationY="15dp"
-        android:background="#FFFFFF"
-        android:layout_gravity="center_horizontal"/>
+                </EditText>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text=""
-        android:layout_marginTop="20dp"
-        android:id="@+id/errorText"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/novaSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="45"
+                    android:gravity="center"
+                    android:hint="@string/novaSenha"
+                    android:textColorHint="#FA6900"
+                    android:inputType="textPassword">
+
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/repeteSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="45"
+                    android:gravity="center"
+                    android:hint="@string/repeteSenha"
+                    android:textColorHint="#FA6900"
+                    android:inputType="textPassword">
+
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/cadastrar"
+                android:id="@+id/cadastrar"
+                android:textColor="#FFFFFF"
+                android:elevation="20dp"
+                android:background="#FA6900"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:layout_marginTop="20dp"
+                android:id="@+id/errorText"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>
